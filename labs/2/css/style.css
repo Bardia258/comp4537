@@ -1,0 +1,72 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #fff;
+}
+.landing, .page-shell {
+  width: min(760px, 92vw);
+  margin: 40px auto;
+}
+.landing { text-align: center; }
+.landing h1 { margin-bottom: 8px; }
+.landing h2 { font-size: 1.1rem; font-weight: 500; margin-top: 0; }
+nav { display: flex; justify-content: center; gap: 18px; margin-top: 32px; }
+.nav-button, .back-button {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #111;
+  background: #f4f4f4;
+  text-decoration: none;
+}
+.page-shell > h1 { text-align: center; font-size: 1.3rem; font-weight: 500; }
+.note-panel {
+  position: relative;
+  min-height: 460px;
+  padding: 90px 48px 45px;
+  border: 2px solid #52749b;
+}
+.status {
+  position: absolute;
+  top: 10px;
+  right: 18px;
+  margin: 0;
+  font-size: 0.78rem;
+}
+.note-row {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 16px;
+}
+.note-text {
+  display: block;
+  width: 320px;
+  min-height: 82px;
+  padding: 10px;
+  resize: vertical;
+  border: 2px solid #355f96;
+  background: #4779c5;
+  color: #fff;
+  font: 1rem/1.35 Arial, Helvetica, sans-serif;
+}
+.reader-note { margin-bottom: 16px; resize: none; }
+.remove-button, .add-button {
+  border-radius: 4px;
+  padding: 4px 18px;
+  font-size: 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+.remove-button { border: 1px solid #b85416; background: #ef7928; }
+.add-button { border: 1px solid #4d8d31; background: #70ad47; }
+.back-button { margin-top: 20px; }
+@media (max-width: 600px) {
+  .note-panel { padding: 80px 20px 35px; }
+  .note-row { align-items: stretch; flex-direction: column; gap: 8px; }
+  .note-text { width: 100%; }
+  .remove-button { align-self: flex-start; }
+}

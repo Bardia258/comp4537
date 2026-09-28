@@ -1,6 +1,3 @@
-
-import { USER_MESSAGES } from "../lang/messages/en/user.js";
-
 class Note {
   constructor(app, text = USER_MESSAGES.emptyNote) {
     this.app = app;
@@ -41,7 +38,6 @@ class Note {
     this.app.saveNotes();
   }
 }
-
 
 class WriterApp {
   constructor() {
@@ -115,6 +111,5 @@ class WriterApp {
     return new Date().toLocaleTimeString();
   }
 }
-
 
 new WriterApp();

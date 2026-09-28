@@ -1,5 +1,3 @@
-import { USER_MESSAGES } from "../lang/messages/en/user.js";
-
 class ReadOnlyNote {
   constructor(container, text) {
     this.textArea = document.createElement("textarea");
@@ -19,7 +17,6 @@ class ReadOnlyNote {
   }
 }
 
-
 class ReaderApp {
   constructor() {
     this.notesContainer = document.getElementById("notes");
@@ -33,6 +30,7 @@ class ReaderApp {
     this.retrieveNotes();
 
     const retrieveIntervalMilliseconds = 2000;
+
     setInterval(
       () => this.retrieveNotes(),
       retrieveIntervalMilliseconds
@@ -83,6 +81,5 @@ class ReaderApp {
     return new Date().toLocaleTimeString();
   }
 }
-
 
 new ReaderApp();

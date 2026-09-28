@@ -1,3 +1,5 @@
+import { USER_MESSAGES } from "../lang/messages/en/user.js";
+
 class ReadOnlyNote {
   constructor(container, text) {
     this.textArea = document.createElement("textarea");

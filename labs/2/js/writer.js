@@ -1,3 +1,6 @@
+
+import { USER_MESSAGES } from "../lang/messages/en/user.js";
+
 class Note {
   constructor(app, text = USER_MESSAGES.emptyNote) {
     this.app = app;
